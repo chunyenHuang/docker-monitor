@@ -15,7 +15,6 @@ class App extends Component {
       fetch('/stats')
         .then((response) => response.json())
         .then((res)=>{
-          console.log(res);
             res.res
             this.setState({
               jobs: res,
